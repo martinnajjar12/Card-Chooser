@@ -1,0 +1,523 @@
+body {
+  overflow: hidden;
+  background-color: #c6bba5;
+  font-family: Lato, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  background-color: transparent;
+  margin: 60px auto;
+  width: 324px;
+  height: 535px;
+  text-align: center;
+  box-shadow: 1px 0 25px -10px rgba(0, 0, 0, 0.8),
+    0 20px 30px -15px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: block;
+}
+
+.background {
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  height: 225px;
+  z-index: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.theBarbarian {
+  position: relative;
+  top: -300px;
+  right: 75px;
+  margin: 0;
+  z-index: 2;
+  width: 425px;
+}
+
+.whiteBackground {
+  background-color: white;
+  margin: 0;
+  position: relative;
+  top: -345px;
+  height: 200px;
+  padding-top: 50px;
+  z-index: 0;
+}
+
+.whiteBackground h4 {
+  margin: 0;
+  color: #ec9b3b;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.whiteBackground h3 {
+  margin: 0;
+  font-size: 30px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.whiteBackground p {
+  padding-top: 5px;
+  color: rgb(180, 180, 180);
+  line-height: 20px;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.stats {
+  position: relative;
+  top: -390px;
+  color: white;
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+}
+
+.stats p {
+  width: 87.34px;
+  height: 75px;
+  float: left;
+  background-color: #ec9b3b;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: bold;
+}
+
+.first {
+  border-bottom-left-radius: 10px;
+}
+
+.second {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.third {
+  border-bottom-right-radius: 10px;
+}
+
+.stats span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/************* THE KNIGHT ****************/
+.wrapper2 {
+  background-color: transparent;
+  margin: 60px auto;
+  width: 324px;
+  height: 535px;
+  text-align: center;
+  box-shadow: 1px 0 25px -10px rgba(0, 0, 0, 0.8),
+    0 20px 30px -15px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: none;
+}
+
+.theKnight {
+  position: relative;
+  top: -315px;
+  margin: 0;
+  z-index: 2;
+  width: 330px;
+}
+
+.wrapper2 .background {
+  height: 270px;
+}
+
+.wrapper2 .stats p {
+  background-color: #4facff;
+}
+
+/************** THE GIANT *****************/
+
+.wrapper3 {
+  background-color: transparent;
+  margin: 60px auto;
+  width: 324px;
+  height: 535px;
+  text-align: center;
+  box-shadow: 1px 0 25px -10px rgba(0, 0, 0, 0.8),
+    0 20px 30px -15px rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  display: none;
+}
+
+.theGiant {
+  position: relative;
+  top: -300px;
+  right: 28px;
+  margin: 0;
+  z-index: 2;
+  width: 350px;
+}
+.wrapper3 .background {
+  height: 270px;
+}
+
+.wrapper3 .stats p {
+  background-color: #78ad29;
+}
+
+.wrapper3 .container3 {
+  position: relative;
+  top: -16px;
+}
+
+.fas {
+  transform: scale(3);
+  color: white;
+  position: fixed;
+}
+
+.fa-chevron-circle-right {
+  left: 975px;
+  top: 300px;
+}
+
+.fa-chevron-circle-left {
+  top: 300px;
+  left: 360px;
+}
+
+.fas:hover {
+  transform: scale(3.5);
+  color: #ef233c;
+  transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.fas:active {
+  transition: none;
+  color: #f68794;
+  transform: scale(3.2);
+}
+
+.flip-horizontal-bottom {
+  -webkit-animation: flip-horizontal-bottom 0.4s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    both;
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+  }
+}
+
+#popBg {
+  display: none;
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  background: #b8b8b8;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 990;
+}
+
+#popBox {
+  display: none;
+  position: absolute;
+  left: 35.5%;
+  top: 25%;
+  height: 150px;
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 7px #777;
+  z-index: 999;
+  text-align: center;
+  padding: 20px;
+}
+
+#allow {
+  border: none;
+  background-color: #85cb33;
+  color: white;
+  margin: 25px;
+  width: 60px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#allow:hover {
+  background-color: #bce28f;
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+#decline {
+  border: none;
+  background-color: #c20a37;
+  color: white;
+  margin: 25px;
+  width: 60px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#decline:hover {
+  background-color: #f47998;
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+}
+
+/***************** STYLES FOR IPAD ***************/
+@media only screen and (max-width: 1024px) {
+  /******** THE BARBARIAN **********/
+  .wrapper {
+    margin: 100px auto;
+    width: 460px;
+    height: 740px;
+  }
+
+  .background {
+    height: 325px;
+  }
+
+  .theBarbarian {
+    position: relative;
+    top: -435px;
+    right: 95px;
+    width: 600px;
+  }
+  .whiteBackground {
+    position: relative;
+    top: -500px;
+    height: 250px;
+    padding-top: 100px;
+  }
+  .whiteBackground h4 {
+    font-size: 22px;
+  }
+
+  .whiteBackground h3 {
+    font-size: 40px;
+  }
+
+  .whiteBackground p {
+    line-height: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 22px;
+  }
+
+  .stats {
+    position: relative;
+    top: -555px;
+  }
+  .stats p {
+    width: 132.67px;
+    height: 90px;
+    font-size: 15px;
+    padding-top: 30px;
+  }
+  .stats span {
+    font-size: 30px;
+  }
+
+  /****************** THE KNIGHT ***************/
+  .wrapper2 {
+    margin: 100px auto;
+    width: 460px;
+    height: 740px;
+  }
+  .wrapper2 .background {
+    height: 358px;
+  }
+  .theKnight {
+    position: relative;
+    top: -435px;
+    width: 500px;
+  }
+
+  /****************** THE GIANT **************/
+
+  .wrapper3 {
+    margin: 100px auto;
+    width: 460px;
+    height: 740px;
+  }
+
+  .theGiant {
+    position: relative;
+    top: -435px;
+    width: 500px;
+  }
+  .wrapper3 .background {
+    height: 377px;
+  }
+
+  .fa-chevron-circle-right {
+    left: 825px;
+    top: 400px;
+  }
+
+  .fa-chevron-circle-left {
+    top: 400px;
+    left: 180px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .fa-chevron-circle-right {
+    left: 655px;
+    top: 400px;
+  }
+
+  .fa-chevron-circle-left {
+    top: 400px;
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    margin: 50px auto;
+    width: 250px;
+    height: 450px;
+  }
+
+  .background {
+    height: 175px;
+  }
+
+  .theBarbarian {
+    position: relative;
+    top: -237px;
+    right: 50px;
+    width: 325px;
+  }
+  .whiteBackground {
+    position: relative;
+    top: -263px;
+    height: 164px;
+    padding-top: 35px;
+  }
+  .whiteBackground h4 {
+    font-size: 15px;
+  }
+
+  .whiteBackground h3 {
+    font-size: 25px;
+  }
+
+  .whiteBackground p {
+    line-height: 20px;
+    padding-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+  }
+
+  .stats {
+    position: relative;
+    top: -273px;
+  }
+  .stats p {
+    width: 62.5px;
+    height: 60px;
+    font-size: 10px;
+    padding-top: 15px;
+  }
+  .stats span {
+    font-size: 20px;
+  }
+  .fas {
+    transform: scale(1.5);
+  }
+  .fa-chevron-circle-right {
+    left: 340px;
+    top: 220px;
+  }
+
+  .fa-chevron-circle-left {
+    top: 220px;
+    left: 20px;
+  }
+  .fas:hover {
+    transform: scale(1.5);
+  }
+
+  .fas:active {
+    transform: scale(1.5);
+  }
+
+  #popBox {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    height: 100px;
+    width: 250px;
+    padding: 20px;
+  }
+  /************* THE KNIGHT *************/
+  .wrapper2 {
+    margin: 50px auto;
+    width: 250px;
+    height: 450px;
+  }
+  .wrapper2 .background {
+    height: 175px;
+  }
+  .theKnight {
+    position: relative;
+    top: -220px;
+    right: 15px;
+    width: 291px;
+  }
+
+  /************ THE GIANT ************/
+  .wrapper3 {
+    margin: 50px auto;
+    width: 250px;
+    height: 450px;
+  }
+
+  .theGiant {
+    position: relative;
+    top: -220px;
+    width: 291px;
+  }
+  .wrapper3 .background {
+    height: 175px;
+  }
+  .wrapper3 .whiteBackground {
+    position: relative;
+    top: -247px;
+  }
+  .wrapper3 .stats {
+    position: relative;
+    top: -256px;
+  }
+}
